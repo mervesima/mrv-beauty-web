@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ürünler - MRVBeauty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>MRVBeauty</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="products.html">Ürünler</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Ürün ara...">
+    <select id="categoryFilter">
+      <option value="Hepsi">Tüm Kategoriler</option>
+      <option value="Cilt Bakımı">Cilt Bakımı</option>
+      <option value="Makyaj">Makyaj</option>
+    </select>
+    <input type="number" id="minPrice" placeholder="Min ₺">
+    <input type="number" id="maxPrice" placeholder="Max ₺">
+    <button onclick="applyFilters()">Filtrele</button>
+  </section>
+
+  <section class="product-grid" id="productGrid"></section>
+
+  <footer>
+    <p>&copy; 2025 MRVBeauty. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
